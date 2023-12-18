@@ -45,7 +45,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt-get update
-          sudo apt-get install -y clang g++-multilib
+          sudo apt-get install -y clang g++-multilib libmysqlclient-dev
 
       - name: Select clang compiler
         if: runner.os == 'Linux'
